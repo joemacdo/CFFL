@@ -40,7 +40,9 @@ h2 {
   border-bottom: 0px solid black;
 }
 
-#trophy, #trophy img {
+.trophy, .trophy img {
+  height: 200px;
+  width: 200px;
   border: none;
 }
 
@@ -60,17 +62,17 @@ h2 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: transparent;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: grey;
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content img {
   color: black;
-  padding: 12px 16px;
+  padding: 5px;
   text-decoration: none;
   display: block;
+  height: 100px;
+  width: 100px;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -81,3 +83,49 @@ h2 {
 
 
 .dropdown:hover .dropdown-content {display: block;}
+
+#jason {
+  position: relative;
+  animation-name: attack;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes attack {
+  0%   {left:0px;}
+  50%  {left:50%;}
+  100% {left:0px;}
+}
+
+#fran {
+  transition: margin-right;
+  transition-duration: 2000ms;
+}
+
+#fran:hover {
+  margin-right: 100%;
+}
+
+#nick {
+  height: 200px;
+  width: 200px;
+}
+
+.animate {
+  animation-name: slide-right;
+  animation-duration: 2s;
+  /* Preserve the effect of the animation at ending */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+
+  from {
+    margin-right: 0px;
+  }
+
+
+  to {
+    margin-right: 200px;
+  }
+}

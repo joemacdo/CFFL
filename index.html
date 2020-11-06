@@ -2,24 +2,59 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="animate.js"></script>
   <title>
     CFFL Week 12 Picks
   </title>
+  <script>
+    /* <![CDATA[ */
+
+    function DoAnimation() {
+      var targetElement = document.getElementById("nick");
+      targetElement.className = "animate";
+    }
+    /* ]]> */
+  </script>
 </head>
 <body>
   <h1> CFFL </h1>
   <h2> Week 12 Picks </h2>
 
-  <div class="dropdown">
+<!--  <div class="dropdown">
   <button class="dropbtn"><img src="./images/joe.jpg" height=100 width=100/></button>
   <div class="dropdown-content">
-    <img src="jeff.jpg" height=50 width=50/>
-    <img src="iliff.jpg" height=50 width=50/>
-    <img src="chops.jpg" height=50 width=50/>
+    <img src="./images/jeff.jpg" height=50 width=50/>
+    <img src="./images/iliff.jpg" height=50 width=50/>
+    <img src="./images/chops.jpg" height=50 width=50/>
   </div>
 </div>
+-->
 
+<!--<div class="custom-select">
+  <select>
+    <option value="0"><img src="./images/joe.jpg" height=100 width=100/></option>
+    <option value="1">Audi</option>
+    <option value="2">BMW</option>
+    <option value="3">Citroen</option>
+    <option value="4">Ford</option>
+    <option value="5">Honda</option>
+    <option value="6">Jaguar</option>
+    <option value="7">Land Rover</option>
+    <option value="8">Mercedes</option>
+    <option value="9">Mini</option>
+    <option value="10">Nissan</option>
+    <option value="11">Toyota</option>
+    <option value="12">Volvo</option>
+  </select>
+</div>
+-->
 
+<!--<select>
+  <option style="background-image:url(/images/joe.jpg);">male</option>
+  <option style="background-image:url(female.png);">female</option>
+  <option style="background-image:url(others.png);">others</option>
+</select>
+-->
   <div class="grid-container">
     <div class="grid-item" id="joe">
       <div class="dropdown">
@@ -33,12 +68,12 @@
     </div>
     <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
     <div class="grid-item"><img src="./images/chief.jpg"/></div>
-    <div class="grid-item"><img src="./images/jason.jpg"/></div>
-    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/fran.jpg"/></div>
+    <div class="grid-item" id="jason"><img src="./images/jason.jpg"/></div>
+    <div class="trophy" id="trophy2"><img src="./images/trophy.png" height=100 width=80 /></div>
+    <div class="grid-item" id="fran"><img src="./images/fran.jpg"/></div>
     <div class="grid-item">LaCroix</div>
-    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/nick.jpg"/></div>
+    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80 onclick="DoAnimation();"/></div>
+    <div class="grid-item" id="nick"><img src="./images/nick.jpg" height=200 width=200 /></div>
     <div class="grid-item"><img src="./images/craven.jpg"/></div>
     <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
     <div class="grid-item">Karp</div>

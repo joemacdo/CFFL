@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CSS Animations</title>
+  <script src="animate.js"></script>
+  <style>
+    /* <![CDATA[ */
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: repeat(2, 110px);
+      border-bottom: 1px solid black;
+    }
+
+    .animate-r {
+      animation-name: slide-right;
+      animation-duration: 2s;
+      /* Preserve the effect of the animation at ending */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide-right {
+
+      from {
+        margin-left: 0px;
+      }
+
+      50% {
+        margin-left: 100%;
+      }
+
+      to {
+        margin-left: 0px;
+      }
+    }
+
+    .animate-l {
+      animation-name: slide-left;
+      animation-duration: 2s;
+      /* Preserve the effect of the animation at ending */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide-left {
+
+      from {
+        margin-right: 0px;
+      }
+
+      50% {
+        margin-right: 100%;
+      }
+
+      to {
+        margin-right: 0px;
+      }
+    }
+
+    #owner2 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+
+    /* ]]> */
+  </style>
+
+  <script>
+    /* <![CDATA[ */
+
+    function DoAnimationR() {
+      var targetElement = document.getElementById("owner1");
+      targetElement.className = "animate-r";
+    }
+
+    function DoAnimationL() {
+    var targetElement = document.getElementById("owner2");
+    targetElement.className = "animate-l";
+    }
+    /* ]]> */
+  </script>
+
+</head>
+<body>
+  <h1>CSS Animations</h1>
+  <div class="grid-container">
+    <div class="game1" class="owners" id="owner1"><img src="./images/chief.jpg" height=100px width=100px /></div>
+    <img src="./images/trophy.png" height=100px width=100px onclick="DoAnimationL(); DoAnimationR();"/>
+    <div class="game1" class="owners" id="owner2"><img src="./images/chops.jpg" height=100px width=100px /></div>
+
+  </div>
+</body>
+</html>
