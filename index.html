@@ -6,15 +6,7 @@
   <title>
     CFFL Week 12 Picks
   </title>
-  <script>
-    /* <![CDATA[ */
 
-    function DoAnimation() {
-      var targetElement = document.getElementById("nick");
-      targetElement.className = "animate";
-    }
-    /* ]]> */
-  </script>
 </head>
 <body>
   <h1> CFFL </h1>
@@ -56,19 +48,18 @@
 </select>
 -->
   <div class="grid-container">
-    <div class="grid-item" id="joe">
+    <div class="grid-item" id="joe"><img src="./images/joe.jpg" height=100 width=100/></div>
+    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
+    <div class="grid-item"><img src="./images/chief.jpg"/></div>
+    <div class="grid-item" id="jason">
       <div class="dropdown">
-        <button class="dropbtn"><img src="./images/joe.jpg" height=100 width=100/></button>
+        <button class="dropbtn"><img src="./images/jason.jpg" height=100 width=100/></button>
         <div class="dropdown-content">
-          <img src="./images/jeff.jpg" height=100 width=100/>
-          <img src="./images/iliff.jpg" height=100 width=100/>
-          <img src="./images/chops.jpg" height=100 width=100/>
+          <img src="./images/jason2.jpg" height=100 width=100/>
+          <img src="./images/jason3.jpg" height=100 width=100/>
         </div>
       </div>
     </div>
-    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/chief.jpg"/></div>
-    <div class="grid-item" id="jason"><img src="./images/jason.jpg"/></div>
     <div class="trophy" id="trophy2"><img src="./images/trophy.png" height=100 width=80 /></div>
     <div class="grid-item" id="fran"><img src="./images/fran.jpg"/></div>
     <div class="grid-item">LaCroix</div>
@@ -77,15 +68,24 @@
     <div class="grid-item"><img src="./images/craven.jpg"/></div>
     <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
     <div class="grid-item">Karp</div>
-    <div class="grid-item"><img src="./images/iliff.jpg"/></div>
+    <div class="grid-item" id="iliff"><img src="./images/iliff.jpg"/></div>
     <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/ryan.jpg"/></div>
+    <div class="grid-item" id="ryan"><img src="./images/ryan.jpg"/></div>
     <div class="grid-item"><img src="./images/andy2.jpg"/></div>
     <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/jimmy.jpg"/></div>
-    <div class="grid-item"><img src="./images/munsch.jpg"/></div>
-    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80/></div>
-    <div class="grid-item"><img src="./images/chops.jpg"/></div>
+    <div class="grid-item" id="ghosty">
+      <div class="dropdown">
+        <button class="dropbtn"><img src="./images/jimmy.jpg" height=100 width=100/></button>
+        <div class="dropdown-content">
+          <img src="./images/hayes.jpg" height=100 width=100/>
+          <img src="./images/jeff.jpg" height=100 width=100/>
+          <img src="./images/ghosty.png" height=100 width=100/>
+        </div>
+      </div>
+    </div>
+    <div class="owner1" id="munsch"><img src="./images/munsch.jpg" height=200 width=200/></div>
+    <div class="grid-item" id="trophy"><img src="./images/trophy.png" height=100 width=80 onclick="DoAnimationL(); DoAnimationR();"/></div>
+    <div class="owner2" id="chops"><img src="./images/chops.jpg" height=200 width=200/></div>
 
   </div>
 </body>

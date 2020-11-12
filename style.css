@@ -84,7 +84,7 @@ h2 {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-#jason {
+#joe {
   position: relative;
   animation-name: attack;
   animation-duration: 2s;
@@ -111,7 +111,7 @@ h2 {
   width: 200px;
 }
 
-.animate {
+.animate-r {
   animation-name: slide-right;
   animation-duration: 2s;
   /* Preserve the effect of the animation at ending */
@@ -121,11 +121,46 @@ h2 {
 @keyframes slide-right {
 
   from {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0px;
+  }
+}
+
+.animate-l {
+  animation-name: slide-left;
+  animation-duration: 2s;
+  /* Preserve the effect of the animation at ending */
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+
+  from {
     margin-right: 0px;
   }
 
+  50% {
+    margin-right: 100%;
+  }
 
   to {
-    margin-right: 200px;
+    margin-right: 0px;
   }
+}
+
+.owner1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#chops {
+  display: flex;
+  justify-content: flex-end;
 }
